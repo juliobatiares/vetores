@@ -35,15 +35,19 @@ public class UsingBubbleSort {
 		
 		System.out.println("\nEscolha o número referente ao tipo de Ordenação que Deseja Utilizar?");
 		
-		System.out.printf("%-3s%s%n%-3s%s%n%-3s%s%n%-3s%s%n", "1 = ", "Ordem Crescente de Nome", 
-				                                              "2 = ", "Ordem Descrescente de Nome", 
-				                                              "3 = ", "Ordem Crescente de Nota",
-				                                              "4 = ", "Ordem Decrescente de Nota");
+		System.out.printf("%-3s%s%n%-3s%s%n%-3s%s%n%-3s%s%n%n%-3s%s%n", "1 = ", "Ordem Crescente de Nome", 
+				                                              			"2 = ", "Ordem Descrescente de Nome", 
+				                                              			"3 = ", "Ordem Crescente de Nota",
+				                                              			"4 = ", "Ordem Decrescente de Nota",
+				                                              			"0 = ", "Finalizar Aplicação...");
 		selecaoMenu = input.nextInt();
 		
 		switch (selecaoMenu) {
+			case 0:
+				System.out.println("Sistema Finalizado!");
+				break;
 			case 1:
-				//Using Bubble Sort / Ordem Crescente de Nome
+				System.out.println(".:: Ordem Crescente de Nome ::.");
 				
 				for (int i = 0; i < nome.length; i++) {
 					String auxNome = null;
@@ -65,9 +69,11 @@ public class UsingBubbleSort {
 					}
 				}
 				showArray();
+				System.out.println();
+				showMenu();
 				break;
 			case 2:
-				//Using Bubble Sort / Ordem Decrescente de Nome
+				System.out.println(".:: Ordem Decrescente de Nome ::.");
 				
 				for (int i = 0; i < nome.length; i++) {
 					String auxNome = null;
@@ -89,9 +95,11 @@ public class UsingBubbleSort {
 					}
 				}
 				showArray();
+				System.out.println();
+				showMenu();
 				break;
 			case 3:
-				//Using Bubble Sort / Ordem Crescente de Nota
+				System.out.println(".:: Ordem Crescente de Nota ::.");
 				
 				for (int i = 0; i < nome.length; i++) {
 					String auxNome = null;
@@ -113,9 +121,11 @@ public class UsingBubbleSort {
 					}
 				}
 				showArray();
+				System.out.println();
+				showMenu();
 				break;
 			case 4:
-				//Using Bubble Sort / Ordem Decrescente de Nota
+				System.out.println(".:: Ordem Decrescente de Nota ::.");
 				
 				for (int i = 0; i < nome.length; i++) {
 					String auxNome = null;
@@ -137,6 +147,8 @@ public class UsingBubbleSort {
 					}
 				}
 				showArray();
+				System.out.println();
+				showMenu();
 				break;
 		}
 		input.close();

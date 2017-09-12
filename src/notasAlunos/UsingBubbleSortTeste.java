@@ -28,8 +28,13 @@ public class UsingBubbleSortTeste {
 			bs.setNota(nota, i);
 		}
 		
+		bs.showArray();
+		
+		System.out.println();
+		
 		bs.showMenu();
-
+		
+		
 		input.close();
 	}
 
